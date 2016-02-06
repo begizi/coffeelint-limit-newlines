@@ -1,9 +1,10 @@
 {
   "name": "coffeelint-limit-newlines",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "Validate a newline limit policy",
-  "main": "index.js",
+  "main": "lib",
   "scripts": {
+    "prepublish": "coffee -o lib -c src",
     "test": "grunt test"
   },
   "repository": {
@@ -30,6 +31,9 @@
     "node": ">= 0.10.0"
   },
   "homepage": "https://github.com/begizi/coffeelint-limit-newlines",
+  "devdependencies": {
+    "coffee-script": "^1.9.3"
+  },
   "peerDependencies": {
     "coffeelint": "~1"
   }
